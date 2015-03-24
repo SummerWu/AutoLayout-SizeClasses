@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="tableView" destination="ydr-WS-pW2" id="Urr-Q1-b4y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HD4.7.png" translatesAutoresizingMaskIntoConstraints="NO" id="whP-st-CCT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="482"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHN-nx-6jT">
+                    <rect key="frame" x="20" y="424" width="280" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YWW-N4-Rmc">
+                            <variation key="heightClass=regular-widthClass=compact" constant="44"/>
+                            <variation key="heightClass=regular-widthClass=regular" constant="90"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-WS-pW2">
+                    <rect key="frame" x="0.0" y="29" width="320" height="387"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="r9G-oJ-LPn"/>
+                        <outlet property="delegate" destination="-1" id="nZj-ks-aaf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ydr-WS-pW2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="4br-bl-OpA"/>
+                <constraint firstAttribute="bottom" secondItem="gHN-nx-6jT" secondAttribute="bottom" constant="10" id="6pw-c6-uFn"/>
+                <constraint firstAttribute="bottom" secondItem="whP-st-CCT" secondAttribute="bottom" id="Bah-hU-KRq"/>
+                <constraint firstAttribute="trailing" secondItem="gHN-nx-6jT" secondAttribute="trailing" constant="20" id="FPZ-67-Qps"/>
+                <constraint firstItem="ydr-WS-pW2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gvf-yC-ZiL"/>
+                <constraint firstAttribute="trailing" secondItem="whP-st-CCT" secondAttribute="trailing" id="Jj2-GC-Fnw"/>
+                <constraint firstItem="whP-st-CCT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZIm-Nv-GDv"/>
+                <constraint firstItem="gHN-nx-6jT" firstAttribute="top" secondItem="ydr-WS-pW2" secondAttribute="bottom" constant="10" id="akD-WU-9FJ"/>
+                <constraint firstItem="whP-st-CCT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h6S-2Y-pIj"/>
+                <constraint firstAttribute="trailing" secondItem="ydr-WS-pW2" secondAttribute="trailing" id="iLh-1Q-IgT"/>
+                <constraint firstItem="gHN-nx-6jT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="rI0-d5-G0i"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="HD4.7.png" width="750" height="1334"/>
+    </resources>
+</document>
